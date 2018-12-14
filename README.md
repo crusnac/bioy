@@ -4,10 +4,10 @@ BIOY is a simple Romanian / English Wordpres Plugin that displays that the curre
 # Usage
 
 ### English
-[bioy lang="en" translation="esv" col="3"]
+`[bioy lang="en" translation="esv" col="3"]`
 
 ### Romanian
-[bioy lang="ro" translation="rmnn" col="3"]
+`[bioy lang="ro" translation="rmnn" col="3"]`
 
 ### Optional Parameters
 
