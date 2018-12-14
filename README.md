@@ -11,5 +11,5 @@ BIOY is a simple Romanian / English Wordpress Plugin that displays a daily readi
 
 ### Optional Parameters
 
-- translation is used to specify which translation you would like to be dispyed.  See https://www.biblegateway.com/versions/ for avaialble translation
-- col is used to specify how many columns are dispalyed. 
+- `translation` is used to specify which translation you would like to be dispyed.  See https://www.biblegateway.com/versions/ for avaialble translation
+- `col` is used to specify how many columns are dispalyed. If not specified, the default is 3 columns. 
