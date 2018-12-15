@@ -1,0 +1,38 @@
+ #bioy {
+         width: 100%;
+     }
+                            
+ul.bioy {
+    width: 100%;  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 20px;
+    column-width: auto;
+}
+     ul.bioy li {
+         padding: 10px;
+     }
+     
+ul.bioy li.current-day {
+    font-weight: 700;
+}
+     
+            
+.day-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #ccc;
+    border-radius: 10px;
+}
