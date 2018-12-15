@@ -7,6 +7,9 @@
 * Author URI: http://www.srcreative.co
 */
 
+define( 'MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
+
+
 ?>
  <style>
 
@@ -83,7 +86,6 @@ ul.bioy li.current-day {
                         
          <?php if($atts[lang] == "en"): //English Language ?>  
          <?php setlocale(LC_ALL ,"en_EN"); date_default_timezone_set('America/Los_Angeles'); 
-            define( 'MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
 
             if (file_exists(MY_PLUGIN_PATH.'xml/360-reading-plan-en.xml')) {
                 $xml = simplexml_load_file(MY_PLUGIN_PATH.'xml/360-reading-plan-en.xml');
@@ -114,9 +116,7 @@ ul.bioy li.current-day {
          
          <?php if($atts[lang] == "ro"): //Romanian Language ?>
          <?php setlocale(LC_ALL ,"ro_RO"); date_default_timezone_set('America/Los_Angeles'); 
-             
-            define( 'MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
-         
+                      
             if (file_exists(MY_PLUGIN_PATH.'xml/360-reading-plan-en.xml')) {
                 $xml = simplexml_load_file(MY_PLUGIN_PATH.'xml/360-reading-plan-ro.xml');
 
