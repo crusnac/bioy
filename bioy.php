@@ -2,61 +2,20 @@
 /*
 * Plugin Name: Bible in One Year
 * Description: Romanian / English Bible in One Year plugin. 
-* Version: 1.0
+* Version: 1.1
 * Author: Claud Rusnac
 * Author URI: http://www.srcreative.co
 */
-
 define( 'MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
 
+function add_my_css_and_my_js_files(){
+        //wp_enqueue_script('your-script-name', $this->urlpath  . '/your-script-filename.js', array('jquery'), '1.2.3', true);
+        wp_enqueue_style( 'bioy', plugins_url('/css/bioy.css', __FILE__), false, '1.0.0', 'all');
+    }
+    
+add_action('wp_enqueue_scripts', "add_my_css_and_my_js_files");
 
-?>
- <style>
-
-     #bioy {
-         width: 100%;
-     }
-                            
-ul.bioy {
-    width: 100%;  
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 20px; /* Firefox */
-  column-gap: 20px;
-    column-width: auto;
-}
-
-     ul.bioy li {
-         padding: 10px;
-     }
-     
-ul.bioy li.current-day {
-    font-weight: 700;
-}
-     
-            
-.day-badge {
-    display: inline-block;
-    min-width: 10px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    background-color: #ccc;
-    border-radius: 10px;
-}
-
-</style>
-
-<div id="bioy">
-<?php // Display the Bible in One year based on language. 
+ // Display the Bible in One year based on language. 
     function bbioy_create($atts){ ?>
 
         <?php if($atts[lang] == null): //Check Language ?>
@@ -152,4 +111,3 @@ ul.bioy li.current-day {
 add_shortcode('bioy', 'bbioy_create');
 
 ?>
-</div>
