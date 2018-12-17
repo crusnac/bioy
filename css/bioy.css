@@ -1,7 +1,7 @@
 #bioy {
   width: 100%;
 }
-                            
+
 ul.bioy {
   width: 100%;  
   list-style: none;
@@ -12,6 +12,9 @@ ul.bioy {
   -moz-column-gap: 20px; /* Firefox */
   column-gap: 20px;
   column-width: auto;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
 }
 ul.bioy li {
   padding: 10px;
