@@ -18,7 +18,7 @@ BIOY is a simple multi-language Wordpress Plugin that displays a daily reading p
 - `locale` is used to display the date in the proper language. If not specified, the default is based on your hosting provider. 
 - `display_current_month` is used to toggle whether to display the current Month/Year.  If not specified, the default is `yes`
 
-### Adding a New language
+# Adding a New language
 This plugin can easily be extended to other languages by simply creating a new bioy_**language**.xml file. See the following instructions on how to add a new language:
 
 - Copy an existing xml file (located in the plugin bioy/xml directory)
