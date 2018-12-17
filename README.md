@@ -25,3 +25,6 @@ This plugin can easily be extended to other languages by simply creating a new b
 - Rename the xml file to the language code that the file has been translated to
 - Translate the XML content, specifically the books of the bible (https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/#booklist)
 - Reference the new language in the shortcode
+
+# Copyright
+Bible Gateway (biblegateway.com) is a searchable online Bible in more than 200 versions and 70 languages that you can freely read, research, and reference anywhere. 
