@@ -1,6 +1,12 @@
 # Bible In One Year Wordpress Plugin
 BIOY is a simple multi-language Wordpress Plugin that displays a daily reading plan for the current month.  
 
+### Installing the BIOY plugin
+
+- Download the source code zip file
+- Upload the entire contnets of into your `wp-contents/plugins/` folder on your website.
+- Active the `bioy` plugin
+
 # Usage
 
 `[bioy lang='en' translation='esv' col='3' locale='en_US' display_current_month='yes']`
