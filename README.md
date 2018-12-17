@@ -1,5 +1,5 @@
 # Bible In One Year Wordpress Plugin
-BIOY is a simple Romanian / English Wordpress Plugin that displays a daily reading plan for the current month.  
+BIOY is a simple multi-language Wordpress Plugin that displays a daily reading plan for the current month.  
 
 # Usage
 
